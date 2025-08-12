@@ -14,7 +14,7 @@ services:
     labels: # new
       - "traefik.enable=true"
       - "traefik.http.routers.bot.entrypoints=https"
-      - "traefik.http.routers.bot.rule=Host(`old.kik-soft.ru`)"
+      - "traefik.http.routers.bot.rule=Host(`bot.kik-soft.ru`)"
       - "traefik.http.routers.bot.tls=true"
       - "traefik.http.routers.bot.tls.certresolver=letsEncrypt"
       - "traefik.http.services.bot-service.loadbalancer.server.port=80"
